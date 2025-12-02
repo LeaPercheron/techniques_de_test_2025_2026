@@ -58,7 +58,7 @@ Test explications :
     Pourquoi :
         9.1) controler que l'algorithme gere triangles uniques, points colineaires
     Comment :
-        9.2) rxecute en tests unitaires avec jeux de donnees dedies
+        9.2) execute en tests unitaires avec jeux de donnees dedies
 
 10) test qui atteste de la conformite du format binaire en sortie avec un client de reference
     Pourquoi :
@@ -77,4 +77,3 @@ Test explications :
         12.1) verifier la latence, absence d'etat corrompu si une requete en  parallèle 
     Comment :
         12.2 scenarii executes via pytest-xdist avec instrumentation des metriques
-        
