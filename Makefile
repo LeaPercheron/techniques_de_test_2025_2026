@@ -1,18 +1,18 @@
 test:
-\tpytest
+	pytest
 
 unit_test:
-\tpytest -m "not performance"
+	pytest -m "not performance"
 
 perf_test:
-\tpytest -m "performance"
+	pytest -m "performance"
 
 coverage:
-\tcoverage run -m pytest
-\tcoverage report
+	coverage run -m pytest
+	coverage report
 
 lint:
-\truff check .
+	ruff check .
 
 doc:
-\tpdoc3 --html --output-dir docs src
+	pdoc3 --html --output-dir docs src

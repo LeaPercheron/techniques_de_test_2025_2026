@@ -1,1 +1,1 @@
-"""package contenant les composant de l'application triangulator"""
+"""Package contenant les composants de l'application triangulator."""

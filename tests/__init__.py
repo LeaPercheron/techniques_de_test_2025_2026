@@ -1,1 +1,1 @@
-"""package de tests pour l'application triangulator"""
+"""Package de tests pour l'application triangulator."""

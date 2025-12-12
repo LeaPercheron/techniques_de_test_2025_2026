@@ -1,3 +1,17 @@
 # caches python
 __pycache__/
 *.pyc
+
+# env local
+.venv/
+
+# outils/tests
+.coverage
+.pytest_cache/
+.ruff_cache/
+
+# artefacts docs auto-générés
+docs/
+
+# fichiers macOS
+.DS_Store
