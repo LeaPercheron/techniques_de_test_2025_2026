@@ -30,6 +30,7 @@ def trianguler_points(liste_points):
         raise ValueError("points dupliqués détectés")
 
     def produit_vectoriel(point_origine, point_a, point_b):
+        """Aire orientée (determinant 2D) pour tester colinearité/sens de rotation."""
         return (point_a[0] - point_origine[0]) * (point_b[1] - point_origine[1]) - (
             point_a[1] - point_origine[1]
         ) * (point_b[0] - point_origine[0])
@@ -67,6 +68,7 @@ def trianguler_points(liste_points):
     triangles_actuels = [indices_super]
 
     def cercle_circonscrit_contient(triangle, point_test):
+        """Teste si point_test est à l'intérieur du cercle circonscrit du triangle."""
         ax, ay = points_ext[triangle[0]]
         bx, by = points_ext[triangle[1]]
         cx, cy = points_ext[triangle[2]]
@@ -108,6 +110,7 @@ def trianguler_points(liste_points):
             )
 
         def cle_arete(arete):
+            """Clé normalisée (ordre trié) pour compter les arêtes frontières."""
             return tuple(sorted(arete))
 
         #supprime les triangles mauvais
